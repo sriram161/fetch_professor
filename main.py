@@ -37,7 +37,3 @@ for prof,link in prof_links.items():
         continue
         
         
-# =============================================================================
-#     print(obj(text = re.compile(r".*@\s*gmu.edu")))
-#     print(obj(text = re.compile(r".* AT gmu DOT edu")))
-# =============================================================================
