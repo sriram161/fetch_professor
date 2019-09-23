@@ -16,15 +16,14 @@ inspiration to extract emails from a single website. It can be extended by combi
 
 Setup
 +++++++++++++++++++++++++++++++++++++++
-Dowload the source code from `<https://github.com/sriram161/fetch_professor>`_
-Install requirements using command ``pip install requirements.txt``
+1. Dowload the source code from `<https://github.com/sriram161/fetch_professor>`_
+2. Install requirements using command  ``pip install requirements.txt``
 
 Execution
 +++++++++++++++++++++++++++++++++++++++
-STEP-1: Bowser to main.py file in the fetch_professor root folder.
-STEP-2: Assign your desired URL to the python global variable ``URL_K_FACULTY = "https://xxxxxxx.xxx.xxx/kifaculty/"``
-STEP-3: Via CMD/SHELL execute command ``$python main.py``
-STEP-4: 
+1. Bowser to main.py file in the fetch_professor root folder.
+2. Assign your desired URL to the python global variable ``URL_K_FACULTY = "https://xxxxxxx.xxx.xxx/kifaculty/"``
+3. Via CMD/SHELL execute command ``$python main.py`` 
 
 Thank you
 +++++++++++++++++++++++++++++++++++++++
