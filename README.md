@@ -1,4 +1,4 @@
 # fetch_professor
 email web scrapper to get email from a single page.
 
-#### [Click me!!! for Documentation](https://sriram161.github.io/fetch_professor/)
+## [CLICK ME!!!](https://sriram161.github.io/fetch_professor/)
