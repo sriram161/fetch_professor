@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 13 15:44:15 2018
+""" URLClerk to get data from input link.
 
-@author: ksrir
+Author
+------
+Sri Ram Sagar K
+
+Created on Sat Jan 13 15:44:15 2018
 """
 
 from urllib.request import urlopen

@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 13 16:59:36 2018
+""" HtmlClerk manages and gets links.
 
-@author: ksrir
+author
+-------
+Sri Ram Sagar K
+
+Created on Sat Jan 13 16:59:36 2018
 """
 
 from bs4 import BeautifulSoup
