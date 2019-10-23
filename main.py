@@ -1,10 +1,21 @@
 # -*- coding: utf-8 -*-
-"""
+""" Fetche e-mail address for a given url into URL_K_FACULTY.
+
+Inputs
+------
+URL_K_FACULTY : str
+    URL string from which e-mail address are extracted.
+
+Outputs
+-------
+OUTPUT_XLS : str
+    Holds extracted emails.
+
+Author
+------
+Sri Ram Sagar k
+
 Created on Sat Jan 13 15:42:35 2018
-
-@author: Sri Ram Sagar k
-
-@Description: fetche e-mail address for a given url in URL_K_FACULTY.
 """
 
 from getmails.html_fetcher import URLClerk
@@ -14,12 +25,13 @@ from urllib.error import HTTPError
 from itertools import chain
 
 URL_K_FACULTY = "https://xxxxxxx.xxx.xxx/kifaculty/" # Input URL to fetch email addresses.
+OUTPUT_XLS = 'k_faculty.xls'
 
 if __name__ == "__main__":
-    clerk = URLClerk()
-    html_raw = clerk.get_html(link = URL_K_FACULTY)
+    clerk = URLClerk()                                  # Manager data clerk object.
+    html_raw = clerk.get_html(link = URL_K_FACULTY)     # Fetch HTML.
 
-    analyzer = HtmlClerk(html_raw)
+    analyzer = HtmlClerk(html_raw)                      # Manager data to html clerk object. 
     lines = analyzer.get_tag('ul')
     prof_links = {a.get_text(): a.get('href') for li in lines[-2].find_all('li') for a in li.find_all('a') }
     temp_df = []
@@ -35,10 +47,9 @@ if __name__ == "__main__":
             temp_df.append(frame)
         except HTTPError:
             continue
-        
-    
-    # Convert data to pandas data frame and Write to an excel file using pandas
+
+    # Convert data to pandas data frame and Write to an excel file.
     import pandas as pd
     df = pd.DataFrame(temp_df)
     print(df)
-    df.to_excel('k_faculty.xls')
+    df.to_excel(OUTPUT_XLS)

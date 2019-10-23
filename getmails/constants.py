@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan 13 20:41:11 2018
+Regular expression serving object.
 
-@author: ksrir
+Author: 
+-------
+Sri Ram Sagar K
+
+Created on Sat Jan 13 20:41:11 2018
 """
 import re
 
@@ -13,4 +17,3 @@ class ReObjects(object):
     
     email_patterns = [re.compile(obj) for obj in emails]
     phone_patterns = [re.compile(obj) for obj in phones]
-    
